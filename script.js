@@ -1,10 +1,10 @@
 const events = {
     'Jan - 23': '★ Leave to Coimbatore',
-    'Jan - 24': '★ Touch down Coimbatore - A day at coimbatore',
-    'Jan - 25': '★ Wakeup 5:30 AM <br>★ Catch bus to Kodaikanal',
-    'Jan - 26': '★ Explore Kodai Day-1. <br> ★ Any immediate notes will be added here',
-    'Jan - 27': '★ Explore Kodai Day-2. <br> ★ Any immediate notes will be added here',
-    'Jan - 28': '★ Move out from Kodaikanal.<br> ★ To be dicussed',
+    'Jan - 24': '★ Touch down Coimbatore. <br> ★ Leave coimbatore, to reach Kodai by night',
+    'Jan - 25': '★ Explore Kodai Day-1. <br> ★ Any immediate notes will be added here',
+    'Jan - 26': '★ Explore Kodai Day-2. <br> ★ Any immediate notes will be added here',
+    'Jan - 27': '★ Move out from Kodaikanal. <br> ★ Pasha to Coimbatore, others to Madurai',
+    'Jan - 28': '★ Still in train bro.',
   };
   
   const dateMapping = {
@@ -98,10 +98,10 @@ const events = {
   
     var ticketLinks = document.getElementById("ticketLinks");
     var links = [
-      { name: "Hyderabad to Coimbatore", url: "https://www.google.com/search?q=lunks+to+be+embedded&oq=lunks+to+be+embedded&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiiBDIHCAIQABiiBNIBCDU1MzBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" },
-      { name: "Bengaluru to Coimbatore(PASHA ONLY)", url: "https://www.google.com/search?q=lunks+to+be+embedded&oq=lunks+to+be+embedded&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiiBDIHCAIQABiiBNIBCDU1MzBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" },
+      { name: "Hyderabad to Coimbatore", url: "https://www.google.com/search?q=links+to+be+embedded&oq=links+to+be+embedded&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiiBDIHCAIQABiiBNIBCDU1MzBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" },
+      { name: "Bengaluru to Coimbatore(PASHA ONLY)", url: "https://www.google.com/search?q=links+to+be+embedded&oq=links+to+be+embedded&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiiBDIHCAIQABiiBNIBCDU1MzBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" },
       { name: "Madurai to Hyderabad", url: "https://drive.google.com/file/d/1Cui_WUBt6MdBD3Mph9ps9pXdCxxPT7KL/view?usp=drive_link" },
-      { name: "Coimbatore to Bengaluru(PASHA ONLY)", url: "https://www.google.com/search?q=lunks+to+be+embedded&oq=lunks+to+be+embedded&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiiBDIHCAIQABiiBNIBCDU1MzBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" },
+      { name: "Coimbatore to Bengaluru(PASHA ONLY)", url: "https://www.google.com/search?q=links+to+be+embedded&oq=links+to+be+embedded&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiiBDIHCAIQABiiBNIBCDU1MzBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" },
     ];
   
     var heading = document.createElement("h2");
@@ -128,8 +128,8 @@ const events = {
     var hotelLinks = document.getElementById("hotelLinks");
   
     var links = [
-      { name: "Coimbatore Hotel Booking Details", url: "https://www.google.com/search?q=lunks+to+be+embedded&oq=lunks+to+be+embedded&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiiBDIHCAIQABiiBNIBCDU1MzBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" },
-      { name: "Kodaikanal Hotel Booking Details", url: "https://www.google.com/search?q=lunks+to+be+embedded&oq=lunks+to+be+embedded&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiiBDIHCAIQABiiBNIBCDU1MzBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" },
+      { name: "Coimbatore Hotel Booking Details", url: "https://www.google.com/search?q=links+to+be+embedded&oq=links+to+be+embedded&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiiBDIHCAIQABiiBNIBCDU1MzBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" },
+      { name: "Kodaikanal Hotel Booking Details", url: "https://www.google.com/search?q=links+to+be+embedded&oq=links+to+be+embedded&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiiBDIHCAIQABiiBNIBCDU1MzBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" },
     ];
   
     var heading = document.createElement("h2");
@@ -237,21 +237,17 @@ const events = {
     option1.textContent = "Day-1 [Coimbatore City]";
     dayDropdown.appendChild(option1);
     const option2 = document.createElement("option");
-    option2.value = "Day-2 [Kodaikanal]";
-    option2.textContent = "Day-2 [Kodaikanal]";
+    option2.value = "Day-2 [Kodaikanal Valley]";
+    option2.textContent = "Day-2 [Kodaikanal Valley]";
     dayDropdown.appendChild(option2);
     const option3 = document.createElement("option");
-    option3.value = "Day-3 [Kodaikanal Valley]";
-    option3.textContent = "Day-3 [Kodaikanal Valley]";
+    option3.value = "Day-3 [Kodaikanal Village]";
+    option3.textContent = "Day-3 [Kodaikanal Village]";
     dayDropdown.appendChild(option3);
     const option4 = document.createElement("option");
-    option4.value = "Day-4 [Kodaikanal Village]";
-    option4.textContent = "Day-4 [Kodaikanal Village]";
+    option4.value = "Day-4 [Moving away from Kodaikanal]";
+    option4.textContent = "Day-4 [Moving away from Kodaikanal]";
     dayDropdown.appendChild(option4);
-    const option5 = document.createElement("option");
-    option5.value = "Day-5 [Moving away from Kodaikanal]";
-    option5.textContent = "Day-5 [Moving away from Kodaikanal]";
-    dayDropdown.appendChild(option5);
     console.log('selected option is ', document.getElementById("dayDropdown").value);
   
     dayDropdown.addEventListener("change", () => {
@@ -282,8 +278,6 @@ const events = {
       tableHTML += " - Jan 26";
     } else if (selectedDay.includes("Day-4")) {
       tableHTML += " - Jan 27";
-    } else if (selectedDay.includes("Day-5")) {
-      tableHTML += " - Jan 28";
     }
   
     tableHTML += "</h2>";
@@ -318,28 +312,12 @@ const events = {
           "dayNumber": "Day-1 [Coimbatore City]",
           "baseLocation": "Coimbatore City",
           "time": "Wish",
-          "visitingPlace": "To be Updated",
-          "description": "Calling out people to nominate places, we have a full day in coimbatore",
+          "visitingPlace": "Bus Stand",
+          "description": "Get the bus immediately, to reach Kodaikanal by night.",
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-2 [Kodaikanal]",
-          "baseLocation": "Kodaikanal",
-          "time": "Will reach by 12:00PM",
-          "visitingPlace": "Silver Cascade Waterfalls",
-          "description": "The Silver Cascade Waterfalls in Kodaikanal, Tamil Nadu, is a serene natural attraction known for its shimmering cascading waters amidst lush greenery, offering a picturesque setting.",
-          "status": "Yet to Visit"
-        },
-        {
-          "dayNumber": "Day-2 [Kodaikanal]",
-          "baseLocation": "Kodaikanal",
-          "time": "Wish",
-          "visitingPlace": "Travel Agency",
-          "description": "We have to get a quote for 'Valley Tour' and 'Village Tour' packages",
-          "status": "Yet to Visit"
-        },
-        {
-          "dayNumber": "Day-3 [Kodaikanal Valley]",
+          "dayNumber": "Day-2 [Kodaikanal Valley]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "Coaker's Walk",
@@ -347,7 +325,7 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-3 [Kodaikanal Valley]",
+          "dayNumber": "Day-2 [Kodaikanal Valley]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "The Upper Lake View",
@@ -355,7 +333,7 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-3 [Kodaikanal Valley]",
+          "dayNumber": "Day-2 [Kodaikanal Valley]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "Pambar Falls",
@@ -363,7 +341,7 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-3 [Kodaikanal Valley]",
+          "dayNumber": "Day-2 [Kodaikanal Valley]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "Green Valley View",
@@ -371,7 +349,7 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-3 [Kodaikanal Valley]",
+          "dayNumber": "Day-2 [Kodaikanal Valley]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "Pillar Rocks",
@@ -379,7 +357,7 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-3 [Kodaikanal Valley]",
+          "dayNumber": "Day-2 [Kodaikanal Valley]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "Guna Caves",
@@ -387,7 +365,7 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-3 [Kodaikanal Valley]",
+          "dayNumber": "Day-2 [Kodaikanal Valley]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "Pine forest (Cine shooting place)",
@@ -395,7 +373,7 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-3 [Kodaikanal Valley]",
+          "dayNumber": "Day-2 [Kodaikanal Valley]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "Moir point",
@@ -403,7 +381,7 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-3 [Kodaikanal Valley]",
+          "dayNumber": "Day-2 [Kodaikanal Valley]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "Bryant Park",
@@ -411,7 +389,7 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-3 [Kodaikanal Valley]",
+          "dayNumber": "Day-2 [Kodaikanal Valley]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "Kodai Lake",
@@ -419,7 +397,7 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-4 [Kodaikanal Village]",
+          "dayNumber": "Day-3 [Kodaikanal Village]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "Gundar Falls",
@@ -427,7 +405,7 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-4 [Kodaikanal Village]",
+          "dayNumber": "Day-3 [Kodaikanal Village]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "Gundar Pine Forest",
@@ -435,7 +413,7 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-4 [Kodaikanal Village]",
+          "dayNumber": "Day-3 [Kodaikanal Village]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "Palani Hills View",
@@ -443,7 +421,7 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-4 [Kodaikanal Village]",
+          "dayNumber": "Day-3 [Kodaikanal Village]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "Mahalakshmi Temple",
@@ -451,7 +429,7 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-4 [Kodaikanal Village]",
+          "dayNumber": "Day-3 [Kodaikanal Village]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "Poombarai Village View",
@@ -459,7 +437,7 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-4 [Kodaikanal Village]",
+          "dayNumber": "Day-3 [Kodaikanal Village]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "Poombarai Murugan Temple",
@@ -467,7 +445,7 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-4 [Kodaikanal Village]",
+          "dayNumber": "Day-3 [Kodaikanal Village]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "Mannavanur Sheep Farm",
@@ -475,7 +453,7 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-4 [Kodaikanal Village]",
+          "dayNumber": "Day-3 [Kodaikanal Village]",
           "baseLocation": "Kodaikanal",
           "time": "Wish",
           "visitingPlace": "Mannavanur Lake",
@@ -483,19 +461,19 @@ const events = {
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-5 [Moving away from Kodaikanal]",
+          "dayNumber": "Day-4 [Moving away from Kodaikanal]",
           "baseLocation": "Kodai - Away",
           "time": "Wish",
-          "visitingPlace": "Towards Coimbdatore",
-          "description": "Catch train - Time to be updated",
+          "visitingPlace": "Towards Madurai",
+          "description": "Catch train - Scheduled departure at 13:15 from Madurai JN",
           "status": "Yet to Visit"
         },
         {
-          "dayNumber": "Day-5 [Moving away from Kodaikanal]",
+          "dayNumber": "Day-4 [Moving away from Kodaikanal]",
           "baseLocation": "Kodai - Away",
           "time": "Wish",
-          "visitingPlace": "Towards Coimbdatore",
-          "description": "Add if anything can be covered",
+          "visitingPlace": "Towards Coimbatore",
+          "description": "Catch bus, return to Bengaluru",
           "status": "Yet to Visit"
         }
     
@@ -660,6 +638,31 @@ const events = {
     
     return totalSum;
   }
+
+  function handleCheckboxChangeInTable(amount) {
+    openPopupForSplit(amount);
+  }
+
+  function openPopupForSplit(amount) {
+    var jsonPopup = document.getElementById("jsonPopup");
+    var jsonTextArea = document.getElementById("jsonTextArea");
+  
+    const splitAmounts = [];
+    for (let i = 2; i <= 5; i++) {
+      const split = amount / i;
+      splitAmounts.push(`${i} Person Split: ${split}`);
+    }
+      const popupText = `Expense Amount: ${amount}\n\n${splitAmounts.join('\n')}`;
+      jsonTextArea.value = popupText;
+    jsonPopup.style.display = "block";
+  }
+  
+  
+  // Function to close the popup
+  function closePopup2ForSplit() {
+    var jsonPopup = document.getElementById("jsonPopup2");
+    jsonPopup.style.display = "none";
+  }
   
   
   function paginateAndDisplayExpenses(data) {
@@ -669,7 +672,7 @@ const events = {
   
     console.log('Getting expenses from API...');
     var tableHTML = '<table>';
-    tableHTML += '<thead><tr><th>Name</th><th>Amount</th><th>Description</th><th>Timestamp</th><th>Relative</th></tr></thead>';
+    tableHTML += '<thead><tr><th>Name</th><th>Amount</th><th>Description</th><th>Timestamp</th><th>Relative</th><th>Split</th></tr></thead>';
     tableHTML += '<tbody>';
   
     for (let i = startIndex; i < endIndex && i < data.data.length; i++) {
@@ -683,6 +686,10 @@ const events = {
         ? `Cleared to ${expense.clearingTo}`
         : 'NA';
       tableHTML += `<td>${clearingContent}</td>`;
+      const splitContent = expense.clearingCheck
+        ? 'NA'
+        : `<a href="javascript:void(0);" onclick="handleCheckboxChangeInTable(${expense.amount})">Calci</a>`;
+      tableHTML += `<td>${splitContent}</td>`;
       tableHTML += '</tr>';
     }
   
