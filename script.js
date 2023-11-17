@@ -98,7 +98,7 @@ const events = {
   
     var ticketLinks = document.getElementById("ticketLinks");
     var links = [
-      { name: "Hyderabad to Coimbatore", url: "https://www.google.com/search?q=links+to+be+embedded&oq=links+to+be+embedded&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiiBDIHCAIQABiiBNIBCDU1MzBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" },
+      { name: "Hyderabad to Coimbatore", url: "https://drive.google.com/file/d/1zAF-YzSlXyV5hWTZ4T3b82KzxcT5NuKJ/view?usp=drive_link" },
       { name: "Bengaluru to Coimbatore(PASHA ONLY)", url: "https://www.google.com/search?q=links+to+be+embedded&oq=links+to+be+embedded&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiiBDIHCAIQABiiBNIBCDU1MzBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" },
       { name: "Madurai to Hyderabad", url: "https://drive.google.com/file/d/1Cui_WUBt6MdBD3Mph9ps9pXdCxxPT7KL/view?usp=drive_link" },
       { name: "Coimbatore to Bengaluru(PASHA ONLY)", url: "https://www.google.com/search?q=links+to+be+embedded&oq=links+to+be+embedded&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiiBDIHCAIQABiiBNIBCDU1MzBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" },
