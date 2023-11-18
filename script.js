@@ -128,8 +128,7 @@ const events = {
     var hotelLinks = document.getElementById("hotelLinks");
   
     var links = [
-      { name: "Coimbatore Hotel Booking Details", url: "https://www.google.com/search?q=links+to+be+embedded&oq=links+to+be+embedded&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiiBDIHCAIQABiiBNIBCDU1MzBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" },
-      { name: "Kodaikanal Hotel Booking Details", url: "https://www.google.com/search?q=links+to+be+embedded&oq=links+to+be+embedded&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiiBDIHCAIQABiiBNIBCDU1MzBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" },
+      { name: "Kodaikanal Hotel Booking Details", url: "https://drive.google.com/file/d/19JC1HgS0_UTvDmqmq8kSZvEwlTPe3wQI/view?usp=drive_link" },
     ];
   
     var heading = document.createElement("h2");
